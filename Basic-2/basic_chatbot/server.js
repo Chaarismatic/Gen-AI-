@@ -35,7 +35,6 @@ const chat = ai.chats.create({
 app.post("/chat", async (req, res) => {
   try {
     const { message } = req.body;
-
     const response = await chat.sendMessage({
       message,
     });
